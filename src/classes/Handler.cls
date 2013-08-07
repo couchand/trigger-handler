@@ -1,5 +1,5 @@
 global interface Handler
 {
-    Boolean isRelevantTo( SObject obj );
-    List<SObject> operateOn( SObject obj );
+    Select.Filter recordSelector();
+    void handleRecords( List<sObject> records );
 }
